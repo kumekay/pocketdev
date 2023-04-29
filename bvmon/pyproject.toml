@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "howami"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Silnov <po@kumekay.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gpiozero = "^1.6.2"
+spidev = "^3.6"
+rpi-gpio = "^0.7.1"
+rpi-ws281x = "^4.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

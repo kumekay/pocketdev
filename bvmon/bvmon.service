@@ -1,0 +1,13 @@
+[Unit]
+Description=Service collecting information about battery voltage
+
+[Service]
+Type=simple
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/bvmon/bvmon.py
+Restart=on-failure
+
+
+[Install]
+WantedBy=default.target
+
